@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Dom</title>
+    <STYle>
+        div#T1{
+            background: black;
+            color: white;
+            width: 600px;
+            height: 300px;
+            text-align: center;
+            font: normal 20pt Arial;
+            line-height: 300px;
+        }
+    </STYle>
+</head>
+<body>
+    <div id = "T1">
+        NÃO CLIQUE AQUI!
+    </div>
+    <SCRipt>
+        var texto = document.getElementById('T1')
+
+        texto.addEventListener('click', clicar)
+        texto.addEventListener('mouseenter', entrar)
+        texto.addEventListener('mouseout', sair)
+
+        function clicar() {
+            texto.innerText = 'Se fudeu tio, viruzão no teu PC agr'
+            texto.style.background = 'red'
+        }
+        function entrar() {
+            texto.innerText = 'To falando mano, não clica nessa parada'
+        }
+        function sair() {
+            texto.innerText = 'Isso ai seu otário, sai fora!'
+            texto.style.background = 'black'
+        }
+    </SCRipt>
+</body>
+</html>

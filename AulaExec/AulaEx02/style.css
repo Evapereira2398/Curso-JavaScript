@@ -1,0 +1,37 @@
+body{
+    background: rgb(31, 46, 68);
+    font: noraml 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: rgb(254, 252, 250);
+    border-radius: 15px;
+    padding: 20px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+p#txtinicial{
+    text-align: center;
+}
+
+p#sexo{
+    text-align: center;
+}
+
+p#button {
+    text-align: center;
+
+}

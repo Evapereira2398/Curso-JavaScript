@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt - Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt caption;
+        }
+
+        h1{
+            color: white;
+            font: normal 25pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora usando HTML e JS</h1>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite o primeiro número:'))
+        var n2 = Number(window.prompt('Digite o segundo número:'))
+        var a = n1 + n2 
+        var b = n1 - n2 
+        var c = n1 * n2 
+        var d = n1 / n2
+        var e = n1 % n2 
+        var f = n1 ** n2 
+        document.write(`A soma de ${n1} e ${n2} é: ${a} </br>`)
+        document.write(`A subtração de ${n1} e ${n2} é: ${b} </br>`)
+        document.write(`A multiplicação de ${n1} e ${n2} é: ${c} </br>`)
+        document.write(`A divisão de ${n1} e ${n2} é: ${d.toFixed(2)} </br>`)
+        document.write(`O resto da divisão de ${n1} e ${n2} é: ${e} </br>`)
+        document.write(`A potência de ${n1} e ${n2} é: ${f} </br>`)
+    </script>
+</body>
+</html>

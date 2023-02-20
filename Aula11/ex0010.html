@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <link rel="stylesheet" href="/Aula11/ex0010.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="tools">
+            <div class="circle">
+                <span class="red box"></span>
+            </div>
+            <div class="circle">
+                <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+                <span class="green box"></span>
+            </div>
+        </div>
+        <div class="card__content">
+            <h1>Sistema de multas</h1>
+            Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+            <div id = "button">
+                Verificar
+            </div>
+            <div id = "res"></div>
+        </div>
+        <script>
+            addEventListener('click', calcular)
+           function calcular(){
+                var txtv = window.document.getElementById('txtvel')
+                var res = window.document.getElementById('res')
+                var vel = Number(txtv.value)
+                res.innerHTML = `<p> Sua velocidade atual é de <stong>${vel}km/h</strong></p>`
+                if (vel > 80){
+                    res.innerHTML += '<p> Você ultrapassou o limite da via</p>'
+                    res.innerHTML += '<p> Você foi <stong>MULTADO!</strong></p>'
+                } 
+                else {
+                    res.innerHTML += '<p>Sua velocidade está dentro do limite da via</p>'
+                }
+            }
+        </script>
+</body>
+
+</html>
